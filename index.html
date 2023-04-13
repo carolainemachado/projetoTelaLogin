@@ -4,51 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/style.css">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
-    <div id="login">
-
+    <div id="formulario">
         <form class="card">
-
             <div class="card-header">
-
                 <h2>Login</h2>
-
             </div>
-
             <div class="card-content">
-
                 <div class="card-content-area">
-
-                    <label for="usuario">Usuário</label>
-
-                    <input type="text" id="usuario" autocomplete="off">
-
+                    <i class="material-icons">person</i>
+                    <input type="email" name="login" id="login" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                    <label for="login">Login</label>
                 </div>
-
                 <div class="card-content-area">
-
-                    <label for="password">Senha</label>
-
-                    <input type="password" id="password" autocomplete="off">
-
+                    <i class="material-icons">vpn_key</i>
+                    <input type="password" name="senha" id="senha" placeholder="sua senha" autocomplete="cu
+                    " required minlength="8" maxlength="20">
+                    <label for="senha">Senha</label>
                 </div>
-
             </div>
-
             <div class="card-footer">
-
-                <input type="submit" value="login" class="submit">
-
-                <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
-
+                <input type="submit" value="Entrar" class="submit">
+                <a href="esqueci.html">Esqueci a senha</a>
             </div>
-
         </form>
-
     </div>
-
 </body>
 </html>
